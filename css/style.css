@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+
+.item {
+	width: 250px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+.item img {
+	width: 100%;
+}
+
+.item input {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.donate {
+	width: 100%;
+	background-color: red;
+	font-size: 18px;
+	color: white;
+	padding:10px;
+	border-radius: 5px;
+	border: none;
+	border-bottom: 5px solid #B21616;
+}
+
+.donate:active {
+	border-bottom: 0px;
+	border-top: 5px solid white;
+	border-radius: 5px;
+}
+
+.bar {
+	width: 0%;
+	height: 5px;
+	background-color: blue;
+	display: block;
+	margin-bottom: 10px;
+	transition: width 1s linear;
+}
+
