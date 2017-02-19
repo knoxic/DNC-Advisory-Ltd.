@@ -1,45 +1,155 @@
 * {
-	box-sizing: border-box;
+	box-sizing: : border-box;
 }
 
-.item {
-	width: 250px;
-	border: 1px solid #ccc;
-	padding: 5px;
+@font-face {
+	font-family: 'Brandon';
+	src: url(../fonts/Brandon_reg.otf);
+}
+body, html {
+	margin: 0;
+	font-family: 'Brandon', Helvetica, Arial, sans-serif;
+	font-size: 30px;
 }
 
-.item img {
+html {
+	background: url(../img/background.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+	color: #B00;
+	transition: color 200ms linear;
+}
+
+a:hover {
+	color:white;
+}
+
+/*img {
+	position: fixed;
 	width: 100%;
+	z-index: -1;
+	top: 0;
+}*/
+
+.center-text {
+	text-align: center;
+	color: #666;
+	position: fixed;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-.item input {
-	width: 100%;
-	margin-bottom: 10px;
+.center-text h1 {
+	font-size: 4rem;
+	margin-bottom: 5px;
+	font-weight: bold;
 }
 
-.donate {
+.center-text p {
+	font-size: 2rem;
+	margin-top: 5px;
+}
+
+.profile-img {
+	border-radius: 50%;
+	width: 100px;
+}
+
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+nav ul {
+	float: right;
+}
+
+nav ul li {
+	display: inline-block;
+	font-size: 1.6rem;
+	margin: 20px;
+}
+
+.image-wrapper {
+	width: 50%;
+	text-align: center;
+}
+
+.image-wrapper img {
+	width: 50%;
+	border-radius: 50%;
+}
+
+.content {
+	width: 50%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.row {
+	clear: both;
+	padding: 20px;
+}
+
+.clearfloat {
+	clear: both;
+}
+
+.content p {
+	line-height: 50px;
+}
+.readbutton {
+	border: 1px solid #A00;
+	padding: 5px 20px;
+	transition: background-color .3s ease-out;
+	border-radius: 20%;
+}
+
+.readbutton:hover {
+	background-color: #A00;
+	font-size: 1.08rem;
+	border-radius: 0px;
+}
+
+.contact-form lable {
+	display:block;
+}
+.contact-form input, .contact-form textarea{
+	display: block;
 	width: 100%;
-	background-color: red;
-	font-size: 18px;
-	color: white;
-	padding:10px;
+	font-size: 1.04rem;
+	padding: 10px;
 	border-radius: 5px;
 	border: none;
-	border-bottom: 5px solid #B21616;
 }
 
-.donate:active {
-	border-bottom: 0px;
-	border-top: 5px solid white;
-	border-radius: 5px;
+.contact-form {
+	max-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.bar {
-	width: 0%;
-	height: 5px;
-	background-color: blue;
-	display: block;
-	margin-bottom: 10px;
-	transition: width 1s linear;
+h
+.summit-button {
+	background-color: #23A0ED;
+	color: white;
+	width: 80%;
+
 }
 
+.center-text .error-message {
+	color: red;
+	font-size: 0.5rem;
+}
